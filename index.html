@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1 class="heading">Weather App</h1>
+    <div class="main-container">
+      <div class="sub-container">
+        <form id="form">
+          <input type="text" id="searchInput" placeholder="Enter location" />
+          <button type="submit" id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <div class="temperature-container">
+          <div class="location-container">
+            <h3 id="location">undefined</h3>
+            <img
+              src="https://flagsapi.com/IN/shiny/32.png"
+              alt="location image"
+              id="location-img"
+            />
+          </div>
+          <div class="weather-icon">
+            <img
+              class="location-img"
+              src="http://openweathermap.org/img/wn/10n@4x.png"
+              alt="Weather-Icon"
+              id="weatherIcon"
+            />
+            <div class="weather-temperature">
+              <h3 class="temperature" id="temperature">0<sup>°</sup>c</h3>
+              <h2 id="temperature-description">undefined</h2>
+            </div>
+          </div>
+        </div>
+        <div class="weather-data">
+          <div class="humidity weather">
+            <h3>Humidity</h3>
+            <i class="fa-solid fa-droplet icons"></i>
+            <h3 id="humidity">0%</h3>
+          </div>
+          <div class="wind-speed weather">
+            <h3>Air Pressure</h3>
+            <i class="fa-solid fa-gauge icons"></i>
+            <h3 id="pressure">0 hPa</h3>
+          </div>
+          <div class="rain weather">
+            <h3>Wind Speed</h3>
+            <i class="fa-solid fa-wind icons"></i>
+            <h3 id="wind">0 mps</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
