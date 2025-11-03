@@ -10,15 +10,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
   </head>
   <body>
     <h1 class="heading">Weather App</h1>
     <div class="main-container">
       <div class="sub-container">
         <form id="form">
-          <input type="text" id="searchInput" placeholder="Enter location" />
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Enter location"
+            required />
           <button type="submit" id="searchBtn">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
@@ -29,16 +32,14 @@
             <img
               src="https://flagsapi.com/IN/shiny/32.png"
               alt="location image"
-              id="location-img"
-            />
+              id="location-img" />
           </div>
           <div class="weather-icon">
             <img
               class="location-img"
               src="http://openweathermap.org/img/wn/10n@4x.png"
               alt="Weather-Icon"
-              id="weatherIcon"
-            />
+              id="weatherIcon" />
             <div class="weather-temperature">
               <h3 class="temperature" id="temperature">0<sup>°</sup>c</h3>
               <h2 id="temperature-description">undefined</h2>
